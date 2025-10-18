@@ -10,7 +10,7 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
         logging.FileHandler(log_file, mode='w', encoding='utf-8'),
-        logging.StreamHandler()  # optional: comment this out to silence console logs
+        # logging.StreamHandler()  
     ]
 )
 logger = logging.getLogger(__name__)
